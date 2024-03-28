@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css">
+    </head>
+    <body class="bg-gray-100">        
+        <!-- header -->
+        <div>
+
+            <div class="container mx-auto px-4 h-20 flex items-center">
+
+                <div class="font-black">
+                    logo
+                </div>
+
+                <ul class="flex items-center ml-auto space-x-4">
+
+                    <li>
+                        <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- /header -->
+
+
+        <!-- banner -->
+        <div style="background: url('/static/img/img1.jpg') no-repeat; background-size: 100% 100%; height: 350px;">
+
+            <div class="container mx-auto px-4 w-full h-full flex justify-center items-center">
+
+                <!-- div de "lista" -->
+                <div class="space-y-8">
+
+                    <div class="text-center space-y-2">
+                        <h1 class="text-gray-200 text-4xl">Onde você quer ir?</h1>
+                        <p class="text-green-100 text-md">Escolha o estado e cidade para achar os melhores resorts.</p>
+                    </div>
+                    
+                    <div>
+                        <form class="space-x-4">
+                            <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                                <option>
+                                    Escolha estado
+                                </option>
+                            </select>
+                            <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                                <option>
+                                    Escolha cidade
+                                </option>
+                            </select>
+                            <button class="inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>                                
+                                Pesquisar resorts
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /banner -->
+
+        <!-- feature resort -->
+
+        <div class="container mx-auto px-10 p-10">
+
+            <div class="flex space-x-2">
+
+                <div class="w-7/12 bg-gray-50 space-y-3 rounded-md shadow-md p-6">
+
+                    <h3 class="text-gray-500 text-sm font-bold">RESORT EM DESTAQUE</h3>
+
+                    <h2 class="text-gray-600 text-2xl">Ecoresort Praia do Forte Bahia</h2>
+
+                    <h4 class="text-gray-400 text-sm font-bold">Hotel qualidade 5 estrelas</h4>
+
+                    <p class="text-gray-600 text-sm">
+                        O Ecoresort Praia do Forte, localizado no litoral da Bahia, é um destino paradisíaco que oferece uma combinação única de luxo, natureza exuberante e sustentabilidade ambiental. Situado em uma das áreas mais preservadas do litoral brasileiro, este resort é um oásis de tranquilidade e beleza natural.
+                    </p>
+
+                    <p class="text-gray-600 text-sm pt-4">
+                        O Ecoresort Praia do Forte na Bahia é um destino exclusivo que harmoniza luxo e preservação ambiental, oferecendo uma experiência relaxante em meio à natureza exuberante.
+                    </p>
+
+                    <button class="inline-flex items-center bg-yellow-500 px-3 py-2 border border-bg-200 rounded text-white font-medium">
+                        Solicitar reserva
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                          
+                    </button>
+
+                </div>
+
+                <div class="w-5/12 rounded-md shadow-md overflow-hidden">
+
+                    <img class="w-full h-full" src="/static/img/img2.jpg" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- /feature resort -->
+
+        <!-- grid resorts -->
+
+        <div class="container mx-auto px-10">
+
+            <h2 class="text-gray-500 text-lg font-bold text-center mb-10">
+                Conheça mais resorts
+            </h2>
+
+            <div class="grid grid-cols-4 grid-rows-2 gap-4 h-96">
+
+                <div class="col-span-2 row-span-2 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome X</h3>
+                    <img class="w-full h-full" src="/static/img/img3.jpg">
+                </div>
+
+                <div class="col-span-2 row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome Y</h3>
+                    <img class="w-full h-full" src="/static/img/img4.jpg">
+                </div>
+
+                <div class="col-span-1 row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome Z</h3>
+                    <img class="w-full h-full" src="/static/img/img5.jpg">
+                </div>
+
+                <div class="col-span-1 row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome J</h3>
+                    <img class="w-full h-full" src="/static/img/img6.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- /grid resorts -->
+
+        <!-- footer -->
+
+        <div class="mx-10 my-20">
+
+            <div class="flex items-center border-t-2 border-gray-200">
+
+                <div>
+                    <h3 class="grid justify-start ml-10">logo</h3>
+                    <div class="grid justify-end mr-10 space-x-4 ">
+                        <a href=""><img class="w-6 h-6" src="/static/img/facebook.png"></a>
+                        <a href=""><img class="w-6 h-6"src="/static/img/instagram.png"></a>
+                    </div>
+                </div>
+
+                <h4>copy</h4>
+
+            </div>
+
+        </div>
+
+        <!-- /footer -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+
+</html>
