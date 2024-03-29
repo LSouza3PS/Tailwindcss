@@ -54,7 +54,7 @@
 
                     <div class="text-center space-y-2">
                         <h1 class="text-gray-200 text-4xl">Onde você quer ir?</h1>
-                        <p class="text-green-100 text-md">Escolha o estado e cidade para achar os melhores resorts.</p>
+                        <p class="text-gray-100 text-md">Escolha o estado e cidade para achar os melhores resorts.</p>
                     </div>
                     
                     <div>
@@ -131,9 +131,9 @@
 
         <!-- grid resorts -->
 
-        <div class="container mx-auto px-10">
+        <div class="container mx-auto px-10 space-y-10">
 
-            <h2 class="text-gray-500 text-lg font-bold text-center mb-10">
+            <h2 class="text-gray-500 text-lg font-bold text-center">
                 Conheça mais resorts
             </h2>
 
@@ -161,32 +161,49 @@
 
             </div>
 
+            <form class="flex justify-center space-x-4">
+                <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option>
+                        Escolha estado
+                    </option>
+                </select>
+                <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                    <option>
+                        Escolha cidade
+                    </option>
+                </select>
+                <button class="inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>                                
+                    Pesquisar resorts
+                </button>
+            </form>
+
         </div>
 
         <!-- /grid resorts -->
 
         <!-- footer -->
 
-        <div class="mx-10 my-20">
+        <div class="mx-10 mt-10">
 
-            <div class="flex items-center border-t-2 border-gray-200">
+            <div class="flex items-center border-t-2 border-gray-200 grid grid-cols-2 grid-rows-2 h-20">
 
-                <div>
-                    <h3 class="grid justify-start ml-10">logo</h3>
-                    <div class="grid justify-end mr-10 space-x-4 ">
-                        <a href=""><img class="w-6 h-6" src="/static/img/facebook.png"></a>
-                        <a href=""><img class="w-6 h-6"src="/static/img/instagram.png"></a>
-                    </div>
+                <h3 class="flex justify-start ml-10 my-4">logo</h3>
+                <div class="flex justify-end mr-10 space-x-4 my-4">
+                    <a href=""><img class="w-5 h-5" src="/static/img/facebook.png"></a>
+                    <a href="" class="opacity-70"><img class="w-5 h-5"src="/static/img/instagram.png"></a>
                 </div>
 
-                <h4>copy</h4>
+                <h4 class="col-span-2 flex justify-center">copy</h4>
 
             </div>
 
         </div>
 
         <!-- /footer -->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </body>
 
 </html>
