@@ -8,14 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/css/tailwind.css">
     </head>
-    <body class="bg-gray-100">        
+    <body class="bg-gray-100 text-sm md:text-base">        
         <!-- header -->
         <div>
 
-            <div class="container mx-auto px-4 h-20 flex items-center">
+            <div class="container max-w-6xl mx-auto px-4 h-20 flex items-center text-center">
 
-                <div class="font-black">
-                    logo
+                <div class="font-black flex items-center space-x-4">
+                    <a href=""><img class="w-12 h-12" src="/static/img/logo.png" alt="Logo"></a>
+                    <h2 class="pr-2 sm:pr-0">Empresa X</h2>
                 </div>
 
                 <ul class="flex items-center ml-auto space-x-4">
@@ -47,7 +48,7 @@
         <!-- banner -->
         <div style="background: url('/static/img/img1.jpg') no-repeat; background-size: 100% 100%; height: 350px;">
 
-            <div class="container mx-auto px-4 w-full h-full flex justify-center items-center">
+            <div class="container max-w-6xl mx-auto px-4 w-full h-full flex justify-center items-center">
 
                 <!-- div de "lista" -->
                 <div class="space-y-8">
@@ -58,7 +59,7 @@
                     </div>
                     
                     <div>
-                        <form class="space-x-4">
+                        <form class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
                                 <option>
                                     Escolha estado
@@ -69,7 +70,7 @@
                                     Escolha cidade
                                 </option>
                             </select>
-                            <button class="inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium">
+                            <button class="col-span-2 sm:col-span-1 inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                                 </svg>                                
@@ -87,11 +88,11 @@
 
         <!-- feature resort -->
 
-        <div class="container mx-auto px-10 p-10">
+        <div class="container max-w-6xl mx-auto px-10 p-10">
 
-            <div class="flex space-x-2">
+            <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
 
-                <div class="w-7/12 bg-gray-50 space-y-3 rounded-md shadow-md p-6">
+                <div class="row-start-2 sm:grid-col-1 sm:row-start-1 w-full bg-gray-50 space-y-3 rounded-md shadow-md p-6">
 
                     <h3 class="text-gray-500 text-sm font-bold">RESORT EM DESTAQUE</h3>
 
@@ -117,9 +118,9 @@
 
                 </div>
 
-                <div class="w-5/12 rounded-md shadow-md overflow-hidden">
+                <div class="rounded-md shadow-md overflow-hidden">
 
-                    <img class="w-full h-full" src="/static/img/img2.jpg" alt="">
+                    <img class="w-full h-full" src="/static/img/img2.jpg" alt="resort 2">
 
                 </div>
 
@@ -131,37 +132,37 @@
 
         <!-- grid resorts -->
 
-        <div class="container mx-auto px-10 space-y-10">
+        <div class="container max-w-6xl mx-auto px-10 space-y-10">
 
             <h2 class="text-gray-500 text-lg font-bold text-center">
                 Conheça mais resorts
             </h2>
 
-            <div class="grid grid-cols-4 grid-rows-2 gap-4 h-96">
+            <div class="grid grid-cols-2 grid-rows-2 sm:grid-cols-4 sm:grid-rows-2 gap-4 h-96">
 
-                <div class="col-span-2 row-span-2 rounded-md shadow-md overflow-hidden relative">
-                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome X</h3>
-                    <img class="w-full h-full" src="/static/img/img3.jpg">
+                <div class="sm:col-span-2 sm:row-span-2 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome A</h3>
+                    <img class="w-full h-full" src="/static/img/img3.jpg" alt="resort 3">
                 </div>
 
-                <div class="col-span-2 row-span-1 rounded-md shadow-md overflow-hidden relative">
-                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome Y</h3>
-                    <img class="w-full h-full" src="/static/img/img4.jpg">
+                <div class="sm:col-span-2 sm:row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome B</h3>
+                    <img class="w-full h-full" src="/static/img/img4.jpg" alt="resort 4">
                 </div>
 
-                <div class="col-span-1 row-span-1 rounded-md shadow-md overflow-hidden relative">
-                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome Z</h3>
-                    <img class="w-full h-full" src="/static/img/img5.jpg">
+                <div class="sm:col-span-1 sm:row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome C</h3>
+                    <img class="w-full h-full" src="/static/img/img5.jpg" alt="resort 5">
                 </div>
 
-                <div class="col-span-1 row-span-1 rounded-md shadow-md overflow-hidden relative">
-                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome J</h3>
-                    <img class="w-full h-full" src="/static/img/img6.jpg">
+                <div class="sm:col-span-1 sm:row-span-1 rounded-md shadow-md overflow-hidden relative">
+                    <h3 class="text-white text-lg font-semibold absolute bottom-0 pl-4 pb-2">Resort de Nome D</h3>
+                    <img class="w-full h-full" src="/static/img/img6.jpg" alt="resort 6">
                 </div>
 
             </div>
 
-            <form class="flex justify-center space-x-4">
+            <form class="grid grid-cols-2 sm:grid-cols-3 gap-4 flex justify-center">
                 <select class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
                     <option>
                         Escolha estado
@@ -172,7 +173,7 @@
                         Escolha cidade
                     </option>
                 </select>
-                <button class="inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium">
+                <button class="col-span-2 sm:col-span-1 inline-flex items-center bg-yellow-500 px-3 py-2 border border-yellow-200 rounded text-white font-medium justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>                                
@@ -186,18 +187,18 @@
 
         <!-- footer -->
 
-        <div class="mx-10 mt-10">
+        <div class="border-t-2 border-gray-200 mt-10 mb-4 text-center">
 
-            <div class="grid items-center border-t-2 border-gray-200 grid-cols-2 grid-rows-2 h-20">
-
-                <h3 class="flex justify-start ml-10 my-4">logo</h3>
-                <div class="flex justify-end mr-10 space-x-4 my-4">
-                    <a href=""><img class="w-5 h-5" src="/static/img/facebook.png"></a>
-                    <a href="" class="opacity-70"><img class="w-5 h-5"src="/static/img/instagram.png"></a>
+            <div class="grid items-center grid-cols-2 grid-rows-2 gap-2 mx-10 mt-4">
+                <a href="" class="font-black flex items-center justify-start space-x-2 ml-10">
+                    <img class="w-7 h-7" src="/static/img/logo.png" alt="Logo">
+                    <p>Empresa X</p>
+                </a>
+                <div class="flex items-center justify-end mr-10 space-x-4">
+                    <a href=""><img class="w-5 h-5" src="/static/img/facebook.png" alt="logo facebook"></a>
+                    <a href="" class="opacity-70"><img class="w-5 h-5"src="/static/img/instagram.png" alt="logo instagram"></a>
                 </div>
-
-                <h4 class="col-span-2 flex justify-center">copy</h4>
-
+                <p class="col-span-2 flex justify-center">&copy; 2024 Leandro Benedito de Souza.</p>
             </div>
 
         </div>
